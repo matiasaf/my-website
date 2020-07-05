@@ -1,11 +1,13 @@
 import Link from 'next/link';
+import Router from 'next/router';
+
 
 const Navbar = () => (
     <nav className="flex sticky top-0 bg-white items-center justify-between flex-wrap p-2 shadow-md">
         <div className="flex items-center flex-grow text-white mx-1">
-            <img className="px-1 mx-2 h-12 w-12" src="/asset2.svg" />
+            <img className="px-1 mx-2 h-12 w-12 cursor-pointer" src="/asset2.svg" onClick={() => Router.push('/')}/>
             <span className="font-sans text-blue-600 text-xl mx-4">
-                matias fernandez
+                {/* matias fernandez */}
             </span>
         </div>
         <div className="text-sm">
